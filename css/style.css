@@ -1,3 +1,9 @@
+:root {
+  --h1: #FFD034;
+  --p: #565656;
+  --satu: #A9B388;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +22,8 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #a9b388;
-  border-bottom: 2px solid #ffd034;
+  background-color: var(--satu);
+  border-bottom: 2px solid var(--h1);
   padding: 1.2rem;
   top: 0;
   left: 0;
@@ -75,7 +81,7 @@
   width: 650px;
   height: 650px;
   border-radius: 100%;
-  background-color: #a9b388;
+  background-color: var(--satu);
   position: absolute;
   top: 100px;
   left: -100px;
@@ -121,7 +127,7 @@
 }
 
 .skills .judul {
-  color: #ffd034;
+  color: var(--h1);
   font-size: 74px;
   margin-bottom: 70px;
   display: flex;
@@ -178,7 +184,7 @@
 }
 
 .projek1 h1 {
-  color: #ffd034;
+  color: var(--h1);
   font-size: 74px;
   position: absolute;
   left: 530px;
@@ -238,7 +244,7 @@
 }
 
 .projek2 h1 {
-  color: #ffd034;
+  color: var(--h1);
   font-size: 74px;
   text-align: right;
   position: absolute;
@@ -264,7 +270,7 @@
   max-width: 384px;
   height: auto;
   text-align: justify;
-  color: #565656;
+  color: var(--p);
   font-size: 24px;
   font-weight: 100;
   position: absolute;
@@ -372,6 +378,47 @@
   right: -180px;
   z-index: 2;
 }
+
+/* --footer-- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 1rem; */
+  background-color: #707951;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .col {
+  display: flex;
+}
+footer .social a {
+  color: #fff;
+  padding: 0.5rem;
+}
+footer .social a:hover {
+  color: var(--h1);
+}
+footer .links a {
+  font: 300 1rem Poppins;
+  display: inline-block;
+  color: #fff;
+  margin: 0.01rem;
+  margin-left: 5rem;
+}
+footer .links a:hover {
+  color: var(--h1);
+}
+footer .credit p {
+  font: 100 1rem Poppins;
+  color: #fff;
+  margin: 1rem;
+  margin-top: 25%;
+}
+footer .credit p span {
+  color: #fff4b4;
+}
+/* --footer end-- */
 
 /* Media */
 
